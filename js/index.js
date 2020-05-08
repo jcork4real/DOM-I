@@ -115,3 +115,33 @@ allParagraphContent[8].textContent = siteContent['contact']['copyright'];
 //  Change the color of the navigation text to be green.
 //  Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want.
 //  Check your work by looking at the original html in the browser
+
+
+
+//Change color of NAV to Green
+navigation[0].style.color = 'green';
+navigation[1].style.color = 'green';
+navigation[2].style.color = 'green';
+navigation[3].style.color = 'green';
+navigation[4].style.color = 'green';
+navigation[5].style.color = 'green';
+
+
+//Add two new items to nav menu
+let navParent = document.querySelector('nav');
+
+
+//Create two new anchor tags, children of nav
+let newAnchorTagOne = document.createElement('a');
+newAnchorTagOne.textContent = 'Prepend';
+
+//second anchor tag, child of nav
+let newAnchorTagTwo = document.createElement('a');
+newAnchorTagTwo.textContent = 'Append';
+
+
+//append and prepend to nav
+navParent.appendChild(newAnchorTagTwo);
+
+navParent.prepend(newAnchorTagOne);
+
