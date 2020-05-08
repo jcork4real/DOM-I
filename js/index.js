@@ -133,15 +133,18 @@ let navParent = document.querySelector('nav');
 
 //Create two new anchor tags, children of nav
 let newAnchorTagOne = document.createElement('a');
-newAnchorTagOne.textContent = 'Prepend';
+newAnchorTagOne.textContent = 'Home';
+newAnchorTagOne.style.color = 'green';
 
 //second anchor tag, child of nav
 let newAnchorTagTwo = document.createElement('a');
-newAnchorTagTwo.textContent = 'Append';
+newAnchorTagTwo.textContent = 'Blog';
 
 
 //append and prepend to nav
-navParent.appendChild(newAnchorTagTwo);
+navParent.appendChild(newAnchorTagTwo).style.color = 'green';
 
 navParent.prepend(newAnchorTagOne);
+
+
 
