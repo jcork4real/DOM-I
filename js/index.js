@@ -77,17 +77,38 @@ let callToActionButton = document.querySelector("button");
 callToActionButton.textContent = siteContent['cta']['button'];
 
 
-//CTA Image
+//CTA Image and main content image
 let callToActionImage = document.querySelector('#cta-img');
 callToActionImage.setAttribute('src', siteContent['cta']['img-src'])
 
-
-//Main Content
-let mainContentFeatures = document.querySelector()
-
+let mainContentImage = document.querySelector('#middle-img');
+mainContentImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
+//Updating all h4
+let mainContentFeatures = document.querySelectorAll('h4');
 
+mainContentFeatures[0].textContent = siteContent['main-content']['features-h4'];
+mainContentFeatures[1].textContent = siteContent['main-content']['about-h4'];
+mainContentFeatures[2].textContent = siteContent['main-content']['services-h4'];
+mainContentFeatures[3].textContent = siteContent['main-content']['product-h4'];
+mainContentFeatures[4].textContent = siteContent['main-content']['vision-h4'];
+mainContentFeatures[5].textContent = siteContent['contact']['contact-h4'];
+
+
+
+//Update all paragraphs content
+let allParagraphContent = document.querySelectorAll('p');
+
+allParagraphContent[0].textContent = siteContent['main-content']['features-content'];
+allParagraphContent[1].textContent = siteContent['main-content']['about-content'];
+allParagraphContent[2].textContent = siteContent['main-content']['services-content'];
+allParagraphContent[3].textContent = siteContent['main-content']['product-content'];
+allParagraphContent[4].textContent = siteContent['main-content']['vision-content'];
+allParagraphContent[5].textContent = siteContent['contact']['address'];
+allParagraphContent[6].textContent = siteContent['contact']['phone'];
+allParagraphContent[7].textContent = siteContent['contact']['email'];
+allParagraphContent[8].textContent = siteContent['contact']['copyright'];
 
 
 //  Task 3: Add new content
